@@ -6,12 +6,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class ControlPolygon extends Application {
     private RegularPolygonPane polygonPane = new RegularPolygonPane();
-    private int numOfSides = 4;
 
     @Override // Override the start method in the Application class
     public void start(Stage primaryStage) {
