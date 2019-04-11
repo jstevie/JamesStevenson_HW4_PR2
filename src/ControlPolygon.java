@@ -39,21 +39,23 @@ public class ControlPolygon extends Application {
         primaryStage.show(); // Display the stage
     }
 
+    /**
+     * When '+' button is pressed, number of sides is increased by one
+     */
     class IncreaseHandler implements EventHandler<ActionEvent> {
         @Override // Override the handle method
         public void handle(ActionEvent e) {
-            numOfSides++;
-            polygonPane.paint(numOfSides);
+            polygonPane.plus();
         }
     }
 
+    /**
+     * When '-' button is pressed, number of sides is decreased by one
+     */
     class DecreaseHandler implements EventHandler<ActionEvent> {
         @Override //Override the handle method
         public void handle (ActionEvent e) {
-            numOfSides--;
-            if (numOfSides < 0)
-                numOfSides = 0;
-            polygonPane.paint(numOfSides);
+            polygonPane.minus();
         }
     }
 
