@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
 
 public class RegularPolygonPane extends Pane {
-    private int sides = 4;
+    public int sides = 4;
 
     /**
      * Creates a new regular polygon with white fill, black outline,

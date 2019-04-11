@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class ControlPolygon extends Application {
@@ -20,8 +21,10 @@ public class ControlPolygon extends Application {
         hBox.setAlignment(Pos.CENTER);
         Button btIncrease = new Button("+");
         Button btDecrease = new Button("-");
+        Button btUpdate = new Button ("Update Polygon");
         hBox.getChildren().add(btIncrease);
         hBox.getChildren().add(btDecrease);
+        hBox.getChildren().add(btUpdate);
 
         // Create and register the handler
         btIncrease.setOnAction(new IncreaseHandler());
